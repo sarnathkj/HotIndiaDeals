@@ -1,0 +1,17 @@
+#toTop{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: none;
+}
+
+.btn-info {
+	background-color: #777;
+	border-color: #777;
+}
+
+.btn-info:hover {
+	background-color: #777;
+	border-color: #777;
+}

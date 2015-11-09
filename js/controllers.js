@@ -1,3 +1,5 @@
-angular.module('DailyDeals', []).controller('homePageController', function($scope) {
+var DailyDeals = angular.module('DailyDeals', ['ui.router']);
+
+DailyDeals.controller('submitDealController',function($scope) {
 
 });

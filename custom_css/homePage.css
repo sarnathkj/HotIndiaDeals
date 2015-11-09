@@ -16,3 +16,21 @@ body > .container {
 code {
     font-size: 80%;
 }
+
+.loginBox {
+	text-align: center;
+}
+
+.well {
+	background-color: #FFF;
+}
+
+.btn-primary-deal {
+	color: #FFF;
+	background-color: #A11C00;
+	border-color: #A11C00;
+}
+
+.btn-primary-deal:hover {
+	color: #FFF;
+}
