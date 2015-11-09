@@ -1,1 +1,89 @@
-<p ng-controller='submitDealController'>SUBMIT DEAL PAGE</p>
+<div class="row">
+	<div class="col-md-12">
+		<h4>DEAL TYPE</h4>
+		<div class="tabbable-panel">
+			<div class="tabbable-line">
+				<ul class="nav nav-tabs ">
+					<li class="active">
+						<a href="#current_tab" data-toggle="tab">DEALS</a>
+					</li>
+					<li>
+						<a href="#/submit/voucher" data-toggle="tab">VOUCHERS</a>
+					</li>
+					<li>
+						<a href="#tab_default_3" data-toggle="tab">FREEBIES</a>
+					</li>
+					<li>
+						<a href="#tab_default_4" data-toggle="tab">ASK</a>
+					</li>
+					<li>
+						<a href="#tab_default_5" data-toggle="tab">COMPETITIONS</a>
+					</li>
+					<li>
+						<a href="#tab_default_6" data-toggle="tab">FOR SALE/ FOR TRADE</a>
+					</li>
+					<li>
+						<a href="#tab_default_7" data-toggle="tab">MISC</a>
+					</li>
+					<li>
+						<a href="#tab_default_8" data-toggle="tab">FEEDBACK</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="current_tab">
+						<h4>Share a Deal</h4>
+						<hr />
+					
+    					<div class="form-area">  
+        					<form role="form">
+        						<br style="clear:both">
+	                    		<div class="form-group">
+    	                			<label>DEAL URL</label>
+									<input type="text" class="form-control" id="name" name="name" placeholder="Deal URL" required>
+								</div>
+								<div class="form-group">
+									<label>TITLE</label>
+									<input type="text" class="form-control" id="email" name="email" placeholder="Title" required>
+								</div>
+								<label>PRICE(&#x20B9)</label>
+								<div class="input-group input-group-deal">
+									<span class="input-group-addon">&#x20B9;</span>
+  									<input type="text" class="form-control" placeholder="Price(&#x20B9)" aria-label="Amount (to the nearest Rupee)">
+								</div>
+
+								<div class="form-group">
+        							<label>TOPIC</label>
+	        						<select name="language" class="form-control">
+		                				<option value=""></option>
+			                			<option value="arabic">Arabic</option>
+    			        				<option value="english">English</option>
+						            	<option value="french">French</option>
+            			    			<option value="german">German</option>
+            							<option value="other">Other</option>
+			        				</select>
+    							</div>
+
+	    						<div class="form-group">
+    	    						<label>TAGS</label>
+					        		<input type="text" name="cities" class="form-control" value="Hanoi" data-role="tagsinput" />
+        						</div>
+
+								<div class="form-group">
+									<label>DETAILS</label>
+                			    	<textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+		                        	<span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>               
+                    			</div>
+
+		                    	<div class="form-group">
+        		            		<label>CHOOSE DATE RANGE</label>
+                		    		<input class="form-control" type="text" name="daterange" value="01/01/2015 - 01/31/2015" />
+                    			</div>
+        						<button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+        					</form>
+    					</div>    
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

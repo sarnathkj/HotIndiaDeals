@@ -1,0 +1,25 @@
+.input-group-deal {
+	margin-bottom: 15px;
+}
+
+.red {
+    color:red;
+}
+
+.form-area {
+    background-color: #F7F7F7;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+}
+
+#bootstrapSelectForm .selectContainer .form-control-feedback {
+    /* Adjust feedback icon position */
+    right: -15px;
+}
+
+.bootstrap-tagsinput {
+    width: 100%;
+}
+.label {
+    line-height: 2 !important;
+}

@@ -19,5 +19,10 @@ DailyDeals.config(function($stateProvider, $urlRouterProvider, $locationProvider
       url: '/submit/deal',
       templateUrl: 'partials/submitDeal.html',
       controller: 'submitDealController'
+    })
+    .state('submitVoucher', {
+      url: '/submit/voucher',
+      templateUrl: 'partials/submitVoucher.html',
+      controller: 'submitVoucherController'
     });
 });
