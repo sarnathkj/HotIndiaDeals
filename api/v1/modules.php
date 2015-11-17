@@ -19,18 +19,52 @@
        	  	$this->con = $con;
     	}
 		
-		function getCategories() {
+		function getCategories($app) {
 			$sql = "SELECT * FROM deals_category";
 			try {
 				$db = $this->con;
 				$stmt = $db->query($sql); 
 				$categories = $stmt->fetchAll(PDO::FETCH_OBJ);
-				return '{"categories": ' . json_encode($categories) . '}';
+				$this->sendResponse(200,'{"categories": ' . json_encode($categories) . '}',$app);
 			} catch(PDOException $e) {
-				echo '{"error":{"text":'. $e->getMessage() .'}}';
-				return '{"error":{"text":'. $e->getMessage() .'}}';
+				$this->sendResponse(400,'{"error":{"text":'. $e->getMessage() .'}}',$app);
 			}
 		}
 
+
+		function submitMiscellaneous($app) {
+			$request = $app->request();
+
+			//RECEIVING POSTED DATA
+			$threadTypeId = $request->post('threadTypeId');
+			$title = $request->post('title');
+			$catid = $request->post('catid');
+			$description = $request->post('description');
+			$tags = $request->post('tags');
+			$userid = $request->post('userid');
+
+			$sql = "INSERT INTO thread_details (thread_type_id, title, catid, description, tags, userid) VALUES (:threadTypeId, :title, :catid, :description, :tags, :userid)";
+			try {
+				$db = $this->con;
+				$stmt = $db->prepare($sql);  
+				$stmt->bindParam("threadTypeId", $threadTypeId);
+				$stmt->bindParam("title", $title);
+				$stmt->bindParam("catid", $catid);
+				$stmt->bindParam("description", $description);
+				$stmt->bindParam("tags", $tags);
+				$stmt->bindParam("userid", $userid);
+				$stmt->execute();
+				$this->sendResponse(200,json_encode("Data Inserted Successfully"),$app); 
+				return true;
+			} catch(PDOException $e) {
+				$this->sendResponse(400,'{"error":{"text":'. $e->getMessage() .'}}',$app); 
+			}
+		}
+
+		function sendResponse($status_code, $response, $app) {
+	    	$app->response->setStatus($status_code);
+	    	$app->contentType('application/json');
+		   	$app->response->write($response);
+		}
 	}
 ?>

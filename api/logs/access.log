@@ -78,3 +78,206 @@ RequestIP: ::1,TimeStamp: 2015-11-17 04:16:02,RequestPath: /api/v1/categories,Re
 --------------------------------------------------------------------------------------------
 RequestIP: ::1,TimeStamp: 2015-11-17 04:17:00,RequestPath: /api/v1/categories,ResponseCode: 200,Response: {"categories": [{"catid":"1","name":"AudioVisual","description":""},{"catid":"2","name":"Mobile","description":""},{"catid":"3","name":"Gaming","description":""},{"catid":"4","name":"Computer","description":""},{"catid":"5","name":"Entertainment","description":""},{"catid":"6","name":"Home","description":""},{"catid":"7","name":"Fashion","description":""},{"catid":"8","name":"Kids","description":""},{"catid":"9","name":"Groceries","description":""},{"catid":"10","name":"Travel","description":""},{"catid":"11","name":"Restaurant","description":""}]}
 -----------------------------------------------------------------------------------------------------------------------
+exception 'ErrorException' with message 'Undefined variable: app' in C:\wamp\www\HotIndiaDeals\api\v1\controllers.php:28
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(28): Slim\Slim::handleErrors(8, 'Undefined varia...', 'C:\\wamp\\www\\Hot...', 28, Array)
+#1 [internal function]: HINDController->getCategories()
+#2 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(173): call_user_func_array(Array, Array)
+#3 [internal function]: Slim\Route->Slim\{closure}()
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 C:\wamp\www\HotIndiaDeals\api\v1\index.php(38): Slim\Slim->run()
+#11 {main}
+exception 'ErrorException' with message 'Undefined variable: HIND' in C:\wamp\www\HotIndiaDeals\api\v1\controllers.php:24
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(24): Slim\Slim::handleErrors(8, 'Undefined varia...', 'C:\\wamp\\www\\Hot...', 24, Array)
+#1 [internal function]: HINDController->getCategories()
+#2 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(173): call_user_func_array(Array, Array)
+#3 [internal function]: Slim\Route->Slim\{closure}()
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 C:\wamp\www\HotIndiaDeals\api\v1\index.php(38): Slim\Slim->run()
+#11 {main}
+exception 'ErrorException' with message 'Undefined variable: HIND' in C:\wamp\www\HotIndiaDeals\api\v1\controllers.php:24
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(24): Slim\Slim::handleErrors(8, 'Undefined varia...', 'C:\\wamp\\www\\Hot...', 24, Array)
+#1 [internal function]: HINDController->getCategories()
+#2 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(173): call_user_func_array(Array, Array)
+#3 [internal function]: Slim\Route->Slim\{closure}()
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 C:\wamp\www\HotIndiaDeals\api\v1\index.php(38): Slim\Slim->run()
+#11 {main}
+exception 'ErrorException' with message 'Undefined variable: app' in C:\wamp\www\HotIndiaDeals\api\v1\controllers.php:8
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(8): Slim\Slim::handleErrors(8, 'Undefined varia...', 'C:\\wamp\\www\\Hot...', 8, Array)
+#1 [internal function]: getCategories()
+#2 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array('getCategories', Array)
+#3 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#8 C:\wamp\www\HotIndiaDeals\api\v1\index.php(35): Slim\Slim->run()
+#9 {main}
+exception 'ErrorException' with message 'Undefined variable: HIND' in C:\wamp\www\HotIndiaDeals\api\v1\controllers.php:12
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(12): Slim\Slim::handleErrors(8, 'Undefined varia...', 'C:\\wamp\\www\\Hot...', 12, Array)
+#1 [internal function]: getCategories()
+#2 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array('getCategories', Array)
+#3 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#8 C:\wamp\www\HotIndiaDeals\api\v1\index.php(35): Slim\Slim->run()
+#9 {main}
+RequestIP: ::1,TimeStamp: 2015-11-17 07:34:53,RequestPath: /api/v1/categories,ResponseCode: 200,Response: {"categories": [{"catid":"1","name":"AudioVisual","description":""},{"catid":"2","name":"Mobile","description":""},{"catid":"3","name":"Gaming","description":""},{"catid":"4","name":"Computer","description":""},{"catid":"5","name":"Entertainment","description":""},{"catid":"6","name":"Home","description":""},{"catid":"7","name":"Fashion","description":""},{"catid":"8","name":"Kids","description":""},{"catid":"9","name":"Groceries","description":""},{"catid":"10","name":"Travel","description":""},{"catid":"11","name":"Restaurant","description":""}]}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-17 11:49:13,RequestPath: /api/v1/hello,ResponseCode: 200
+RequestIP: ::1,TimeStamp: 2015-11-17 11:52:08,RequestPath: /api/v1/hello,ResponseCode: 200,Response: 
+RequestIP: ::1,TimeStamp: 2015-11-17 11:53:54,RequestPath: /api/v1/hello,ResponseCode: 200,Response: "API Application is Up and Running :) by HIND"
+RequestIP: ::1,TimeStamp: 2015-11-17 11:54:26,RequestPath: /api/v1/hello,ResponseCode: 200,Response: "API Application is Up and Running :) by HIND"
+RequestIP: ::1,TimeStamp: 2015-11-17 11:55:11,RequestPath: /api/v1/hello,ResponseCode: 200,Response: "API Application is Up and Running :) by HIND"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-17 11:55:12,RequestPath: /api/v1/hello,ResponseCode: 200,Response: "API Application is Up and Running :) by HIND"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 02:14:54,RequestPath: /api/v1/hello,ResponseCode: 200,Response: "API Application is Up and Running :) by HIND"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 02:15:42,RequestPath: /api/v1/categories,ResponseCode: 200,Response: {"categories": [{"catid":"1","name":"AudioVisual","description":""},{"catid":"2","name":"Mobile","description":""},{"catid":"3","name":"Gaming","description":""},{"catid":"4","name":"Computer","description":""},{"catid":"5","name":"Entertainment","description":""},{"catid":"6","name":"Home","description":""},{"catid":"7","name":"Fashion","description":""},{"catid":"8","name":"Kids","description":""},{"catid":"9","name":"Groceries","description":""},{"catid":"10","name":"Travel","description":""},{"catid":"11","name":"Restaurant","description":""}]}
+-----------------------------------------------------------------------------------------------------------------------
+exception 'ErrorException' with message 'Undefined variable: responseData' in C:\wamp\www\HotIndiaDeals\api\v1\controllers.php:25
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(25): Slim\Slim::handleErrors(8, 'Undefined varia...', 'C:\\wamp\\www\\Hot...', 25, Array)
+#1 [internal function]: submitMiscellaneous()
+#2 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array('submitMiscellan...', Array)
+#3 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#8 C:\wamp\www\HotIndiaDeals\api\v1\index.php(46): Slim\Slim->run()
+#9 {main}
+RequestIP: ::1,TimeStamp: 2015-11-18 03:43:25,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 03:45:23,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 03:47:37,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 03:48:27,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 03:49:03,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 03:50:10,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 03:50:37,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 03:51:39,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 03:51:56,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 03:52:05,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 03:52:19,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+exception 'ErrorException' with message 'Object of class Slim\Http\Request could not be converted to string' in C:\wamp\www\HotIndiaDeals\api\v1\modules.php:42
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\modules.php(42): Slim\Slim::handleErrors(4096, 'Object of class...', 'C:\\wamp\\www\\Hot...', 42, Array)
+#1 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(24): HIND->submitMiscellaneous(Object(Slim\Slim))
+#2 [internal function]: submitMiscellaneous()
+#3 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array('submitMiscellan...', Array)
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 C:\wamp\www\HotIndiaDeals\api\v1\index.php(41): Slim\Slim->run()
+#10 {main}
+RequestIP: ::1,TimeStamp: 2015-11-18 03:54:04,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+exception 'ErrorException' with message 'Attempt to modify property of non-object' in C:\wamp\www\HotIndiaDeals\api\v1\modules.php:43
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\modules.php(43): Slim\Slim::handleErrors(2, 'Attempt to modi...', 'C:\\wamp\\www\\Hot...', 43, Array)
+#1 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(24): HIND->submitMiscellaneous(Object(Slim\Slim))
+#2 [internal function]: submitMiscellaneous()
+#3 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array('submitMiscellan...', Array)
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 C:\wamp\www\HotIndiaDeals\api\v1\index.php(41): Slim\Slim->run()
+#10 {main}
+exception 'ErrorException' with message 'Attempt to modify property of non-object' in C:\wamp\www\HotIndiaDeals\api\v1\modules.php:44
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\modules.php(44): Slim\Slim::handleErrors(2, 'Attempt to modi...', 'C:\\wamp\\www\\Hot...', 44, Array)
+#1 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(24): HIND->submitMiscellaneous(Object(Slim\Slim))
+#2 [internal function]: submitMiscellaneous()
+#3 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array('submitMiscellan...', Array)
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 C:\wamp\www\HotIndiaDeals\api\v1\index.php(41): Slim\Slim->run()
+#10 {main}
+exception 'ErrorException' with message 'Attempt to modify property of non-object' in C:\wamp\www\HotIndiaDeals\api\v1\modules.php:44
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\modules.php(44): Slim\Slim::handleErrors(2, 'Attempt to modi...', 'C:\\wamp\\www\\Hot...', 44, Array)
+#1 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(24): HIND->submitMiscellaneous(Object(Slim\Slim))
+#2 [internal function]: submitMiscellaneous()
+#3 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array('submitMiscellan...', Array)
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 C:\wamp\www\HotIndiaDeals\api\v1\index.php(41): Slim\Slim->run()
+#10 {main}
+RequestIP: ::1,TimeStamp: 2015-11-18 04:12:52,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 04:16:11,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 04:36:26,RequestPath: /api/v1/categories,ResponseCode: 200,Response: {"categories": [{"catid":"1","name":"AudioVisual","description":""},{"catid":"2","name":"Mobile","description":""},{"catid":"3","name":"Gaming","description":""},{"catid":"4","name":"Computer","description":""},{"catid":"5","name":"Entertainment","description":""},{"catid":"6","name":"Home","description":""},{"catid":"7","name":"Fashion","description":""},{"catid":"8","name":"Kids","description":""},{"catid":"9","name":"Groceries","description":""},{"catid":"10","name":"Travel","description":""},{"catid":"11","name":"Restaurant","description":""}]}
+-----------------------------------------------------------------------------------------------------------------------
+exception 'ErrorException' with message 'Attempt to modify property of non-object' in C:\wamp\www\HotIndiaDeals\api\v1\modules.php:43
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\modules.php(43): Slim\Slim::handleErrors(2, 'Attempt to modi...', 'C:\\wamp\\www\\Hot...', 43, Array)
+#1 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(22): HIND->submitMiscellaneous(Object(Slim\Slim))
+#2 [internal function]: submitMiscellaneous()
+#3 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array('submitMiscellan...', Array)
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 C:\wamp\www\HotIndiaDeals\api\v1\index.php(41): Slim\Slim->run()
+#10 {main}
+RequestIP: ::1,TimeStamp: 2015-11-18 04:40:14,RequestPath: /api/v1/categories,ResponseCode: 200,Response: {"categories": [{"catid":"1","name":"AudioVisual","description":""},{"catid":"2","name":"Mobile","description":""},{"catid":"3","name":"Gaming","description":""},{"catid":"4","name":"Computer","description":""},{"catid":"5","name":"Entertainment","description":""},{"catid":"6","name":"Home","description":""},{"catid":"7","name":"Fashion","description":""},{"catid":"8","name":"Kids","description":""},{"catid":"9","name":"Groceries","description":""},{"catid":"10","name":"Travel","description":""},{"catid":"11","name":"Restaurant","description":""}]}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 04:47:17,RequestPath: /api/v1/submit/misc,ResponseCode: 400,Response: {"error":{"text":SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'thread_type_id' cannot be null}}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 04:52:07,RequestPath: /api/v1/submit/misc,ResponseCode: 400,Response: {"error":{"text":SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'thread_type_id' cannot be null}}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 04:52:38,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: Data Inserted Successfully
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 04:56:03,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 05:01:59,RequestPath: /api/v1/categories,ResponseCode: 200,Response: {"categories": [{"catid":"1","name":"AudioVisual","description":""},{"catid":"2","name":"Mobile","description":""},{"catid":"3","name":"Gaming","description":""},{"catid":"4","name":"Computer","description":""},{"catid":"5","name":"Entertainment","description":""},{"catid":"6","name":"Home","description":""},{"catid":"7","name":"Fashion","description":""},{"catid":"8","name":"Kids","description":""},{"catid":"9","name":"Groceries","description":""},{"catid":"10","name":"Travel","description":""},{"catid":"11","name":"Restaurant","description":""}]}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 05:02:18,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 05:03:19,RequestPath: /api/v1/categories,ResponseCode: 200,Response: {"categories": [{"catid":"1","name":"AudioVisual","description":""},{"catid":"2","name":"Mobile","description":""},{"catid":"3","name":"Gaming","description":""},{"catid":"4","name":"Computer","description":""},{"catid":"5","name":"Entertainment","description":""},{"catid":"6","name":"Home","description":""},{"catid":"7","name":"Fashion","description":""},{"catid":"8","name":"Kids","description":""},{"catid":"9","name":"Groceries","description":""},{"catid":"10","name":"Travel","description":""},{"catid":"11","name":"Restaurant","description":""}]}
+-----------------------------------------------------------------------------------------------------------------------
