@@ -34,9 +34,14 @@
 	//GET ROUTES
 	$app->get('/categories', 'getCategories');
 
+	$app->get('/view/profile/:username',function($username) {
+		getProfile($username);
+	});
+
 
 	//POST ROUTES
-	$app->post('/submit/misc', 'submitMiscellaneous');
+	$app->post('/submit/misc', 'postMiscellaneous');
+	$app->post('/submit/deal','postDeal');
 
 	$app->run();
 

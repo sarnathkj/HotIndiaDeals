@@ -281,3 +281,132 @@ RequestIP: ::1,TimeStamp: 2015-11-18 05:02:18,RequestPath: /api/v1/submit/misc,R
 -----------------------------------------------------------------------------------------------------------------------
 RequestIP: ::1,TimeStamp: 2015-11-18 05:03:19,RequestPath: /api/v1/categories,ResponseCode: 200,Response: {"categories": [{"catid":"1","name":"AudioVisual","description":""},{"catid":"2","name":"Mobile","description":""},{"catid":"3","name":"Gaming","description":""},{"catid":"4","name":"Computer","description":""},{"catid":"5","name":"Entertainment","description":""},{"catid":"6","name":"Home","description":""},{"catid":"7","name":"Fashion","description":""},{"catid":"8","name":"Kids","description":""},{"catid":"9","name":"Groceries","description":""},{"catid":"10","name":"Travel","description":""},{"catid":"11","name":"Restaurant","description":""}]}
 -----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 05:25:55,RequestPath: /api/v1/submit/misc,ResponseCode: 200,Response: "Data Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-18 11:50:18,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": []}
+-----------------------------------------------------------------------------------------------------------------------
+exception 'ErrorException' with message 'Undefined variable: app' in C:\wamp\www\HotIndiaDeals\api\v1\index.php:38
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\index.php(38): Slim\Slim::handleErrors(8, 'Undefined varia...', 'C:\\wamp\\www\\Hot...', 38, Array)
+#1 [internal function]: {closure}('sarnathkj')
+#2 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array(Object(Closure), Array)
+#3 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#8 C:\wamp\www\HotIndiaDeals\api\v1\index.php(45): Slim\Slim->run()
+#9 {main}
+exception 'ErrorException' with message 'Missing argument 1 for getProfile(), called in C:\wamp\www\HotIndiaDeals\api\v1\index.php on line 38 and defined' in C:\wamp\www\HotIndiaDeals\api\v1\controllers.php:16
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(16): Slim\Slim::handleErrors(2, 'Missing argumen...', 'C:\\wamp\\www\\Hot...', 16, Array)
+#1 C:\wamp\www\HotIndiaDeals\api\v1\index.php(38): getProfile()
+#2 [internal function]: {closure}('sarnathkj')
+#3 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array(Object(Closure), Array)
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 C:\wamp\www\HotIndiaDeals\api\v1\index.php(45): Slim\Slim->run()
+#10 {main}
+RequestIP: ::1,TimeStamp: 2015-11-19 12:22:27,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": []}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:22:58,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": []}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:23:54,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": []}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:24:57,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": []}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:25:06,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": []}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:25:47,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": []}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:29:10,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 400,Response: {"error":{"text":SQLSTATE[HY093]: Invalid parameter number: parameter was not defined}}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:31:18,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 400,Response: {"error":{"text":SQLSTATE[HY093]: Invalid parameter number: parameter was not defined}}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:33:22,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 400,Response: "{\"error\":{\"text\":SQLSTATE[HY093]: Invalid parameter number: parameter was not defined}}"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:33:42,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 400,Response: "{\"error\":{\"text\":SQLSTATE[HY093]: Invalid parameter number: parameter was not defined}}"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:34:42,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 400,Response: "{\"error\":{\"text\":SQLSTATE[HY093]: Invalid parameter number: parameter was not defined}}"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:35:55,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 400,Response: "{\"error\":{\"text\":SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sarnathkj' in 'where clause'}}"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:36:17,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 400,Response: "{\"error\":{\"text\":SQLSTATE[HY093]: Invalid parameter number: parameter was not defined}}"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:37:18,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": [{"uid":"1","username":"sarnathkj","email":"sarnathkj@gmail.com","description":"Mokka Description","location":"S. Alangulam, Madurai","date_joined":"2015-11-18 01:34:39","profile_image":"\/assets\/img\/profile_pictures\/saran.jpg","login_timestamp":"2015-11-18 01:34:39","followers":null,"buddy_list":null}]}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:37:49,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": [{"uid":"1","username":"sarnathkj","email":"sarnathkj@gmail.com","description":"Mokka Description","location":"S. Alangulam, Madurai","date_joined":"2015-11-18 01:34:39","profile_image":"\/assets\/img\/profile_pictures\/saran.jpg","login_timestamp":"2015-11-18 01:34:39","followers":null,"buddy_list":null}]}
+-----------------------------------------------------------------------------------------------------------------------
+exception 'ErrorException' with message 'Undefined variable: user_detail' in C:\wamp\www\HotIndiaDeals\api\v1\modules.php:43
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\modules.php(43): Slim\Slim::handleErrors(8, 'Undefined varia...', 'C:\\wamp\\www\\Hot...', 43, Array)
+#1 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(22): HIND->getProfile('sarnathkj', Object(Slim\Slim))
+#2 C:\wamp\www\HotIndiaDeals\api\v1\index.php(38): getProfile('sarnathkj')
+#3 [internal function]: {closure}('sarnathkj')
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 C:\wamp\www\HotIndiaDeals\api\v1\index.php(45): Slim\Slim->run()
+#11 {main}
+exception 'ErrorException' with message 'Array to string conversion' in C:\wamp\www\HotIndiaDeals\api\v1\modules.php:43
+Stack trace:
+#0 C:\wamp\www\HotIndiaDeals\api\v1\modules.php(43): Slim\Slim::handleErrors(8, 'Array to string...', 'C:\\wamp\\www\\Hot...', 43, Array)
+#1 C:\wamp\www\HotIndiaDeals\api\v1\controllers.php(22): HIND->getProfile('sarnathkj', Object(Slim\Slim))
+#2 C:\wamp\www\HotIndiaDeals\api\v1\index.php(38): getProfile('sarnathkj')
+#3 [internal function]: {closure}('sarnathkj')
+#4 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Route.php(468): call_user_func_array(Object(Closure), Array)
+#5 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#6 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#7 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 C:\wamp\www\HotIndiaDeals\api\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#10 C:\wamp\www\HotIndiaDeals\api\v1\index.php(45): Slim\Slim->run()
+#11 {main}
+RequestIP: ::1,TimeStamp: 2015-11-19 12:42:01,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: "{\"user_details\": [{\"uid\":\"1\",\"username\":\"sarnathkj\",\"email\":\"sarnathkj@gmail.com\",\"description\":\"Mokka Description\",\"location\":\"S. Alangulam, Madurai\",\"date_joined\":\"2015-11-18 01:34:39\",\"profile_image\":\"\\\/assets\\\/img\\\/profile_pictures\\\/saran.jpg\",\"login_timestamp\":\"2015-11-18 01:34:39\",\"followers\":null,\"buddy_list\":null}]}"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:42:53,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": [{"uid":"1","username":"sarnathkj","email":"sarnathkj@gmail.com","description":"Mokka Description","location":"S. Alangulam, Madurai","date_joined":"2015-11-18 01:34:39","profile_image":"\/assets\/img\/profile_pictures\/saran.jpg","login_timestamp":"2015-11-18 01:34:39","followers":null,"buddy_list":null}]}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:45:55,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": [{"uid":"1","username":"sarnathkj","email":"sarnathkj@gmail.com","description":"Mokka Description","location":"S. Alangulam, Madurai","date_joined":"2015-11-18 01:34:39","profile_image":"\/assets\/img\/profile_pictures\/saran.jpg","login_timestamp":"2015-11-18 01:34:39","followers":null,"buddy_list":null}]}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:46:20,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": [{"uid":"1","username":"sarnathkj","email":"sarnathkj@gmail.com","description":"Mokka Description","location":"S. Alangulam, Madurai","date_joined":"2015-11-18 01:34:39","profile_image":"\/assets\/img\/profile_pictures\/saran.jpg","login_timestamp":"2015-11-18 01:34:39","followers":null,"buddy_list":null}]}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:46:26,RequestPath: /api/v1/view/profile/sarnathkj,ResponseCode: 200,Response: {"user_details": [{"uid":"1","username":"sarnathkj","email":"sarnathkj@gmail.com","description":"Mokka Description","location":"S. Alangulam, Madurai","date_joined":"2015-11-18 01:34:39","profile_image":"\/assets\/img\/profile_pictures\/saran.jpg","login_timestamp":"2015-11-18 01:34:39","followers":null,"buddy_list":null}]}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:46:42,RequestPath: /api/v1/view/profile/abrahamk,ResponseCode: 200,Response: {"user_details": [{"uid":"2","username":"abrahamk","email":"abrahamrkj@gmail.com","description":"Description nyabagam varliyae.","location":"Selva Gardens, Madurai","date_joined":"2015-11-18 01:40:33","profile_image":"\/assets\/img\/profile_pictures\/abu.jpg","login_timestamp":"2015-11-18 01:40:33","followers":null,"buddy_list":null}]}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:46:50,RequestPath: /api/v1/view/profile/abrahamkj,ResponseCode: 200,Response: {"user_details": []}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:46:56,RequestPath: /api/v1/view/profile/abrahamk,ResponseCode: 200,Response: {"user_details": [{"uid":"2","username":"abrahamk","email":"abrahamrkj@gmail.com","description":"Description nyabagam varliyae.","location":"Selva Gardens, Madurai","date_joined":"2015-11-18 01:40:33","profile_image":"\/assets\/img\/profile_pictures\/abu.jpg","login_timestamp":"2015-11-18 01:40:33","followers":null,"buddy_list":null}]}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 12:51:13,RequestPath: /api/v1/view/profile/abrahamk,ResponseCode: 200,Response: {"user_details": [{"uid":"2","username":"abrahamk","email":"abrahamrkj@gmail.com","description":"Description nyabagam varliyae.","location":"Selva Gardens, Madurai","date_joined":"2015-11-18 01:40:33","profile_image":"\/assets\/img\/profile_pictures\/abu.jpg","login_timestamp":"2015-11-18 01:40:33","followers":null,"buddy_list":null}]}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 01:01:48,RequestPath: /api/v1/view/profile/abrahamk,ResponseCode: 200,Response: {"user_details": [{"uid":"2","username":"abrahamk","email":"abrahamrkj@gmail.com","description":"Description nyabagam varliyae.","location":"Selva Gardens, Madurai","date_joined":"2015-11-18 01:40:33","profile_image":"\/assets\/img\/profile_pictures\/abu.jpg","login_timestamp":"2015-11-18 01:40:33","followers":null,"buddy_list":null}]}
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 02:54:05,RequestPath: /api/v1/submit/deal,ResponseCode: 400,Response: "{\"error\":{\"text\":SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens}}"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 02:58:23,RequestPath: /api/v1/submit/deal,ResponseCode: 400,Response: "{\"error\":{\"text\":SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`hind_dev`.`thread_details`, CONSTRAINT `deal_state_FK` FOREIGN KEY (`state`) REFERENCES `deal_state` (`id`))}}"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 03:01:37,RequestPath: /api/v1/submit/deal,ResponseCode: 200,Response: "Deal Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 03:07:05,RequestPath: /api/v1/submit/deal,ResponseCode: 200,Response: "Deal Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 03:07:13,RequestPath: /api/v1/submit/deal,ResponseCode: 200,Response: "Deal Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 03:07:22,RequestPath: /api/v1/submit/deal,ResponseCode: 200,Response: "Deal Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 03:29:44,RequestPath: /api/v1/submit/deal,ResponseCode: 200,Response: "Deal Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 03:30:03,RequestPath: /api/v1/submit/deal,ResponseCode: 200,Response: "Deal Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 03:30:09,RequestPath: /api/v1/submit/deal,ResponseCode: 200,Response: "Deal Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 03:30:22,RequestPath: /api/v1/submit/deal,ResponseCode: 200,Response: "Deal Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
+RequestIP: ::1,TimeStamp: 2015-11-19 03:31:05,RequestPath: /api/v1/submit/deal,ResponseCode: 200,Response: "Deal Inserted Successfully"
+-----------------------------------------------------------------------------------------------------------------------
