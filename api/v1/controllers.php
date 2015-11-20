@@ -13,6 +13,30 @@
     	$app->log->info('-----------------------------------------------------------------------------------------------------------------------');
 	}
 
+    function getUsersCount() {
+        $app = \Slim\Slim::getInstance();
+        $request=$app->request();
+        $response=$app->response();
+        
+        $HIND = new HIND();
+        $HIND->getUsersCount($app);
+        
+        $app->log->info('RequestIP: ' . $request->getIp() .',TimeStamp: ' .date('Y-m-d h:i:s').',RequestPath: /api/v1' . $request->getPathInfo() . ',ResponseCode: ' . $response->getStatus() . ',Response: '.$response->getBody());
+        $app->log->info('-----------------------------------------------------------------------------------------------------------------------');
+    }
+
+    function getThreadsCount() {
+        $app = \Slim\Slim::getInstance();
+        $request=$app->request();
+        $response=$app->response();
+        
+        $HIND = new HIND();
+        $HIND->getThreadsCount($app);
+        
+        $app->log->info('RequestIP: ' . $request->getIp() .',TimeStamp: ' .date('Y-m-d h:i:s').',RequestPath: /api/v1' . $request->getPathInfo() . ',ResponseCode: ' . $response->getStatus() . ',Response: '.$response->getBody());
+        $app->log->info('-----------------------------------------------------------------------------------------------------------------------');
+    }
+
     function getProfile($username) {
         $app = \Slim\Slim::getInstance();
         $request=$app->request();
@@ -23,6 +47,18 @@
         
         $app->log->info('RequestIP: ' . $request->getIp() .',TimeStamp: ' .date('Y-m-d h:i:s').',RequestPath: /api/v1' . $request->getPathInfo() . ',ResponseCode: ' . $response->getStatus() . ',Response: '.$response->getBody());
         $app->log->info('-----------------------------------------------------------------------------------------------------------------------');
+    }
+
+    function getThread($deal_category,$thread_type,$thread_state) {
+        $app = \Slim\Slim::getInstance();
+        $request=$app->request();
+        $response=$app->response();
+        
+        $HIND = new HIND();
+        $HIND->getThread($deal_category,$thread_type,$thread_state,$app);
+        
+        $app->log->error('RequestIP: ' . $request->getIp() .',TimeStamp: ' .date('Y-m-d h:i:s').',RequestPath: /api/v1' . $request->getPathInfo() . ',ResponseCode: ' . $response->getStatus() . ',Response: '.$response->getBody());
+        $app->log->error('-----------------------------------------------------------------------------------------------------------------------');
     }
 
     function postMiscellaneous() {

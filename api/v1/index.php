@@ -34,14 +34,23 @@
 	//GET ROUTES
 	$app->get('/categories', 'getCategories');
 
-	$app->get('/view/profile/:username',function($username) {
+	$app->get('/users/count','getUsersCount');
+
+	$app->get('/threads/count','getThreadsCount');
+
+	$app->get('/view/profile/:username', function($username) {
 		getProfile($username);
+	});
+
+	$app->get('/view/:deal_category/:thread_type/:thread_state', function($deal_category, $thread_type, $thread_state) {
+		getThread($deal_category,$thread_type,$thread_state);
 	});
 
 
 	//POST ROUTES
 	$app->post('/submit/misc', 'postMiscellaneous');
 	$app->post('/submit/deal','postDeal');
+
 
 	$app->run();
 

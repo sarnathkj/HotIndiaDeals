@@ -20,12 +20,36 @@
     	}
 		
 		function getCategories($app) {
-			$sql = "SELECT * FROM deals_category";
+			$sql = "SELECT * FROM thread_category";
 			try {
 				$db = $this->con;
 				$stmt = $db->query($sql); 
 				$categories = $stmt->fetchAll(PDO::FETCH_OBJ);
 				$this->sendResponse(200,'{"categories": ' . json_encode($categories) . '}',$app);
+			} catch(PDOException $e) {
+				$this->sendResponse(400,json_encode('{"error":{"text":'. $e->getMessage() .'}}'),$app);
+			}
+		}
+
+		function getUsersCount($app) {
+			$sql = "SELECT count(*) AS usersCount FROM user_details";
+			try {
+				$db = $this->con;
+				$stmt = $db->query($sql); 
+				$usersCount = $stmt->fetch(PDO::FETCH_OBJ);
+				$this->sendResponse(200,'{"usersCount": ' . json_encode($usersCount->usersCount) . '}',$app);
+			} catch(PDOException $e) {
+				$this->sendResponse(400,json_encode('{"error":{"text":'. $e->getMessage() .'}}'),$app);
+			}
+		}
+
+		function getThreadsCount($app) {
+			$sql = "SELECT count(*) AS threadsCount FROM thread_details";
+			try {
+				$db = $this->con;
+				$stmt = $db->query($sql); 
+				$threadsCount = $stmt->fetch(PDO::FETCH_OBJ);
+				$this->sendResponse(200,'{"threadsCount": ' . json_encode($threadsCount->threadsCount) . '}',$app);
 			} catch(PDOException $e) {
 				$this->sendResponse(400,json_encode('{"error":{"text":'. $e->getMessage() .'}}'),$app);
 			}
@@ -43,6 +67,34 @@
 			} catch(PDOException $e) {
 				$this->sendResponse(400,json_encode('{"error":{"text":'. $e->getMessage() .'}}'),$app);
 			}
+		}
+
+		function getThread($thread_category,$thread_type,$thread_state,$app) {
+			$thread_type_id = $this->getThreadTypeId($thread_type,$app);
+			$thread_state_id = $this->getThreadStateId($thread_state,$app);
+			
+			if($thread_category=="all") {
+				$sql = "SELECT * FROM thread_details WHERE thread_type_id=:thread_type_id AND state=:thread_state_id";
+			} else {
+				$thread_category_id = $this->getThreadCategoryId($thread_category,$app);
+				$sql = "SELECT * FROM thread_details WHERE thread_type_id=:thread_type_id AND state=:thread_state_id AND catid=:thread_category_id";
+			}
+
+			try {
+				$db = $this->con;
+				$stmt = $db->prepare($sql); 
+				$stmt->bindParam("thread_type_id",$thread_type_id);
+				$stmt->bindParam("thread_state_id",$thread_state_id);
+				if($thread_category!="all") {
+					$stmt->bindParam("thread_category_id",$thread_category_id);
+				}
+				$stmt->execute();
+				$thread_details = $stmt->fetchAll(PDO::FETCH_OBJ);
+				$this->sendResponse(200,'{"thread_details": ' . json_encode($thread_details) . '}',$app);
+			} catch(PDOException $e) {
+				$this->sendResponse(400,json_encode('{"error":{"text":'. $e->getMessage() .'}}'),$app);
+			}
+			
 		}
 
 
@@ -130,6 +182,48 @@
 				$this->sendResponse(400,json_encode('{"error":{"text":'. $e->getMessage() .'}}'),$app); 
 			}
 
+		}
+
+		function getThreadTypeId($thread_type,$app) {
+			$sql = "SELECT id FROM thread_type WHERE type=:thread_type";
+			try {
+				$db = $this->con;
+				$stmt = $db->prepare($sql); 
+				$stmt->bindParam("thread_type",$thread_type);
+				$stmt->execute();
+				$thread_details = $stmt->fetch(PDO::FETCH_OBJ);
+				return $thread_details->id;
+			} catch(PDOException $e) {
+				$this->sendResponse(400,json_encode('{"error":{"text":'. $e->getMessage() .'}}'),$app);
+			}
+		}
+
+		function getThreadCategoryId($thread_category,$app) {
+			$sql = "SELECT catid FROM thread_category WHERE name=:thread_category";
+			try {
+				$db = $this->con;
+				$stmt = $db->prepare($sql); 
+				$stmt->bindParam("thread_category",$thread_category);
+				$stmt->execute();
+				$thread_category_details = $stmt->fetch(PDO::FETCH_OBJ);
+				return $thread_category_details->catid;
+			} catch(PDOException $e) {
+				$this->sendResponse(400,json_encode('{"error":{"text":'. $e->getMessage() .'}}'),$app);
+			}
+		}
+
+		function getThreadStateId($thread_state,$app) {
+			$sql = "SELECT id FROM thread_state WHERE state=:thread_state";
+			try {
+				$db = $this->con;
+				$stmt = $db->prepare($sql); 
+				$stmt->bindParam("thread_state",$thread_state);
+				$stmt->execute();
+				$thread_state_details = $stmt->fetch(PDO::FETCH_OBJ);
+				return $thread_state_details->id;
+			} catch(PDOException $e) {
+				$this->sendResponse(400,json_encode('{"error":{"text":'. $e->getMessage() .'}}'),$app);
+			}
 		}
 
 		function sendResponse($status_code, $response, $app) {
